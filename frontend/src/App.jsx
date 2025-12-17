@@ -4,11 +4,13 @@ import { Route, Routes } from 'react-router-dom'
 import HomePage from './pages/Home'
 import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
     <>
-      <h1>Header</h1>
+      <Navbar />
       
         <Routes>
           <Route path="/" Component={HomePage} />
@@ -16,7 +18,7 @@ const App = () => {
           <Route path="/register" Component={RegisterPage} />
         </Routes>
 
-      <h1>Footer</h1>
+      <Footer />
     </>
   )
 }
